@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: "multi-tenant-producer"
+
+multi-tenant:
+  tenants:
+    - tenantId: Manipal_01
+      enabled: true
+      schema: manipal01
+  kafka:
+    bootstrap-servers: "localhost:29092"
+    topic:
+      tenant-topic: "tenant-topic1"
+  aws:
+    s3:
+      minio-url: "http://localhost:9000"
+      access-key: "tenantUser"
+      secret-key: "tenantPwd"
+      region: "us-east-1"

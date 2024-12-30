@@ -1,0 +1,6 @@
+CREATE SCHEMA IF NOT EXISTS DEFAULT_FAKE;
+
+CREATE TABLE IF NOT EXISTS DEFAULT_FAKE.fake
+(
+    id    integer primary key
+);
